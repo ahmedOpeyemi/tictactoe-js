@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ex & hoe</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">		
+	<link rel="stylesheet" href="css/templatemo-style.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+	<h2>ex & hoe</h2>
+	<div ng-app="mainApp" ng-controller="homeController">
+		<div class="col-sm-4 col-md-5"></div>
+		<div class="col-sm-4 col-md-2 col-xs-9">
+			<div class="alert alert-warning">Click on any square to begin!</div>
+			<p><input id="autoBox" type="checkbox" ng-click="toggleAutoPlay()" ng-checked="{{autoPlay}}"><span>Play Vs. Computer (Computer would be player 2)</span></p>
+			<table class="table table-hover table-bordered" >
+				<tr>
+					<td id="0" class="" ng-click="tick($event)">{{ board.sq0 || '-' }}</td>
+					<td id="1" ng-click="tick($event)">{{ board.sq1  || '-' }}</td>
+					<td id="2" ng-click="tick($event)">{{ board.sq2  || '-' }}</td>
+				</tr>
+				<tr>
+					<td id="3" ng-click="tick($event)" >{{ board.sq3  || '-' }}</td>
+					<td id="4" ng-click="tick($event)">{{ board.sq4  || '-' }}</td>
+					<td id="5" ng-click="tick($event)">{{ board.sq5 || '-' }}</td>
+				</tr>
+				<tr>
+					<td id="6" ng-click="tick($event)">{{ board.sq6  || '-' }}</td>
+					<td id="7" ng-click="tick($event)">{{ board.sq7  || '-' }}</td>
+					<td id="8" ng-click="tick($event)">{{ board.sq8 || '-' }}</td>
+				</tr>
+			</table>
+			<div class="moveBoard">
+				<p>Player 1 - {{p1MoveCount}} moves</p>
+				<p>Player 2 - {{p2MoveCount}} moves</p>
+				<p class="alert alert-success">{{message}}</p>
+			</div>
+
+			<button type="button" class="btn btn-info btn-block" ng-click="reset()">Reset</button>
+			<div>
+				<a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=Can you beat this? Its a Challenge :D via @AbMajeedO Visit:http://ahmedopeyemi.com/game"
+  data-size="large">
+Tweet</a>
+			<p class="version">Version 1.0 - &copy; <a target="_blank" href="http://ahmedopeyemi.com/main">Ahmed A.O</a>, 2015</p>	
+			<p class="version">Noticed a Bug? Take a screenshot, and send details to <a href="mailto:devpoint@ahmedopeyemi.com">devpoint@ahmedopeyemi.com</a></p>
+		</div>
+	</div>
+	<div class="col-sm-4 col-md-5"></div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/_utils.js"></script>
+<script src="js/_main.js"></script>
+<script src="js/_homeController.js"></script>
+</body>
+</html>

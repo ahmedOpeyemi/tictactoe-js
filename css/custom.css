@@ -1,0 +1,33 @@
+.table-hover>tbody>tr>td:hover, .table-hover>tbody>tr>td:hover{
+        background-color: #f4a460;
+    }
+
+    .table-hover>tbody>tr>td{
+    	text-align: center;
+    	vertical-align: center;
+    	font-size: 30px;
+    }
+
+    .moveBoard{
+    	background-color: #fff;
+    	padding: 20px;
+    	border-radius: 5px;
+    }
+
+    .xSquare{
+    	background-color: #E6E6E6;
+    }
+
+    .oSquare{
+    	background-color: #CCCCCC;
+    }
+
+    .winSquare{
+    	background-color: #dff0d8;
+    }
+
+    .version{
+    	margin-top: 10px;
+    	font-weight: normal;
+    	font-size: 11px;
+    }
