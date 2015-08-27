@@ -10,8 +10,8 @@ To see how the game runs, [Visit this link!](http://ahmedopeyemi.com/game).
 `index.html`  HTML page that runs the app on the web browser  
 
 ## JS Folder Structure
-`_homeController.js` 
-`_main.js`
-`_utils.js`
+`_homeController.js`  Initializes the main controller and contains some basic functions
+`_main.js`  Initializes the main module
+`_utils.js`  Contains utility functions used to run the game. Functions in this script are referenced from `_homeController.js`
 
 
